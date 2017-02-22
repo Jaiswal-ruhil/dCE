@@ -1,12 +1,12 @@
 # deploy database
 curdir=`pwd`
 cd mongo-database
-dev-env -t
+dev-env --daemon
 
 # deploy ReST server
 cd $curdir
 cd rest-server
-dev-env -t
+dev-env --run
 
 #deploy function dispatcher
 
