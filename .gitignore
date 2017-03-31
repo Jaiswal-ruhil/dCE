@@ -1,1 +1,13 @@
-*/
+code_integration_system
+common
+math-model-generator
+mongo-database
+pypl
+userInterface
+code_manager
+context_switch
+lambda-server
+method-invocation
+proof_assistant
+rest-server
+test-cis

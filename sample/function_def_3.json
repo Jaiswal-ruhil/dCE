@@ -1,0 +1,21 @@
+{
+    "uniq_id": 1,
+    "name": "cis_test_3",
+    "descrpition": "function for testing",
+    "ext": "py",
+    "lib": [],
+    "env": [],
+    "tags": ["testing", "test1"],
+    "params": [{
+            "type": "int",
+            "var": "x"
+        },
+        {
+            "type": "str",
+            "var": "y"
+        }
+    ],
+    "return": "int",
+    "body": "def cis_test_3(x, y):\n    x = x+1\n    for i in range(0,10):\n        x = x+i\n    return x",
+    "author": "Ruhil Jaiswal"
+}

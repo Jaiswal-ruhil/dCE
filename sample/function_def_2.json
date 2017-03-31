@@ -1,0 +1,23 @@
+{
+    "uniq_id": 1,
+    "name": "cis_test_2",
+    "descrpition": "function for testing",
+    "ext": "py",
+    "lib": [],
+    "env": [],
+    "tags": ["testing", "test1"],
+    "params": [{
+            "type": "int",
+            "var": "x"
+        },
+        {
+            "type": "str",
+            "var": "y"
+        }
+    ],
+    "return": "int",
+    "body": [
+        "return x"
+    ],
+    "author": "Ruhil Jaiswal"
+}

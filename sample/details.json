@@ -1,0 +1,49 @@
+{
+	"list_sum":{
+		"name":"list_sum",
+		"parameters":{
+			"0":{
+				"type":"List",
+				"constraints":["value % 1 == 0"]
+			}
+		}
+	},
+	"list_sort":{
+		"name":"list_sort",
+		"parameters":{
+			"0":{
+				"type":"List",
+				"constraints":["value % 1 == 0"]
+			}
+		}
+	},
+	"primesTill":{
+		"name":"primes",
+		"parameters":{
+			"0":{
+				"type":"int",
+				"allowed_types":["int"],
+				"constraints":[],
+				"min":"0",
+				"max":"10000"
+			}
+		}
+	},
+	"addNums":{
+		"name":"addNums",
+		"parameters":{
+			"0":{
+				"type":"int",
+				"allowed_types":["int","float","string"],
+				"constraints":[]
+			},
+			"1":{
+				"type":"int",
+				"allowed_types":["int","float","string"],
+				"constraints":[]
+			}
+
+		}
+	}
+
+}

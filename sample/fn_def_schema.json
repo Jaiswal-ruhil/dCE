@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "descrpition": {
+            "type": "string"
+        },
+        "ext": {
+            "type": "string"
+        },
+        "return": {
+            "type": "string"
+        },
+        "author": {
+            "type": "string"
+        },
+        "body": {
+            "type": "string"
+        },
+        "lib": {
+            "type" : "array",
+            "items" : {"type" : "string"}
+        },
+        "env": {
+            "type" : "array",
+            "items" : {"type" : "string"}
+        },
+        "tags": {
+            "type" : "array",
+            "items" : {"type" : "string"}
+        },
+        "params": {
+            "type" : "array",
+            "items" : {
+                "type" : "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "var": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "required": ["body", "tags"]
+}
