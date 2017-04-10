@@ -20,27 +20,15 @@
 import os
 from os.path import split
 import sys
-base_path = split(split(split(os.path.abspath(os.getcwd()))[0])[0])[0]
+base_path = split(split(os.path.abspath(os.getcwd()))[0])[0]
 sys.path.insert(0, os.path.abspath('.'))
-print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa")
-print(base_path)
-sys.path.append(os.path.join(base_path,"math-model-generator"))
-sys.path.append(os.path.join(base_path,"math-model-generator","computations"))
-sys.path.append(os.path.join(base_path,"math-model-generator","complexity"))
-sys.path.append(os.path.join(base_path,"mongo-database","core"))
-sys.path.append(os.path.join(base_path,"mongo-database"))
-sys.path.append(os.path.join(base_path,"method-invocation"))
-sys.path.append(os.path.join(base_path,"setup","sample"))
-sys.path.append(os.path.join(base_path,"common-utils"))
-sys.path.append(os.path.join(base_path,"test_cis"))
-sys.path.append(os.path.join(base_path,"code-integration-system","functionComparator"))
-sys.path.append(os.path.join(base_path,"code-integration-system"))
-sys.path.append(os.path.join(base_path,"code-integration-system","code_manager"))
-sys.path.append(os.path.join(base_path,"code-integration-system","sample"))
-sys.path.append(os.path.join(base_path,"code-integration-system","rest_calls"))
-sys.path.append(os.path.join(base_path,"rest-server"))
-sys.path.append(os.path.join(base_path,"code_manager"))
-sys.path.append(os.path.join(base_path,"context_switch"))
+with open(os.path.join(base_path,"documentation","dirlist.txt"),"r") as fp:
+    dir_list=fp.read().splitlines()
+
+    dir_set=set(dir_list)    
+print(dir_set)
+for dir_path in dir_set:
+    sys.path.append(dir_path)
 
 
 
@@ -57,7 +45,8 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
-    'sphinx.ext.coverage']
+    'sphinx.ext.coverage',
+    'sphinx.ext.viewcode']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
