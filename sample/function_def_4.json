@@ -1,0 +1,13 @@
+{
+    "name": "a",
+    "descrpition": null,
+    "ext": "py",
+    "tags": ["aa"],
+    "params": [{
+            "type": "int",
+            "var": "x"
+        }
+    ],
+    "return": [],
+    "body": "def a(x: int)->int:\n    return 1"
+}
