@@ -11,3 +11,12 @@ method-invocation
 proof_assistant
 rest-server
 test-cis
+documentation/docs2/*.rst
+__pycache__
+*.pyc
+documentation/docs2/_build/*
+filelist.txt
+dirlist.txt
+.cis/
+Makefile
+make.bat
