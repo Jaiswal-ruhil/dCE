@@ -11,7 +11,7 @@ method-invocation
 proof_assistant
 rest-server
 test-cis
-documentation/docs2/*.rst
+documentation/docs2
 __pycache__
 *.pyc
 documentation/docs2/_build/*
