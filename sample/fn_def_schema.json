@@ -11,7 +11,7 @@
             "type": "string"
         },
         "return": {
-            "type": "string"
+            "type" : ["string", "null"]
         },
         "author": {
             "type": "string"
