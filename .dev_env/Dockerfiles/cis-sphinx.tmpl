@@ -6,7 +6,6 @@
 
 FROM  python
 
-
 RUN apt update
 RUN apt upgrade -y
 RUN pip install cherrypy
@@ -18,8 +17,10 @@ RUN pip install sympy
 RUN pip install Cython
 RUN pip install word2vec
 RUN pip install gensim
+RUN pip install jsonschema
 RUN pip install sphinx
+
 ENV PYTHONPATH $PYTHONPATH:{{DB_DRIVER_CONTAINER}}:{{COMMON_UTIL_CONTAINER}}:{{CODE_MANAGER_CONTAINER}}:{{PHINEAS_FERB_CONTAINER}}:{{DEXTER_CONTAINER}}:{{WORD2VEC_CONTAINER}}
 
 
-WORKDIR {{REPO_PATH_CONTAINER}}
+WORKDIR {{SPHINX_PATH_CONTAINER}}

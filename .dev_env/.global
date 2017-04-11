@@ -1,0 +1,37 @@
+# #############################################################################
+# key="description"[:default]
+# example
+#   NAME="name of the project"
+#   VER="version of the project":0.0.1
+#
+# *shared file across the development
+# #############################################################################
+
+IMG="rest server image name":cis-sphinx
+SPHINX_PATH_CONTAINER="mount path to sphinx doc project":/sphinx_docs
+REPO_PATH_CONTAINER="mount path to rest server files":/rest_server
+DB_DRIVER_CONTAINER="mount path to db driver files":/db_driver
+COMMON_UTIL_CONTAINER="mount path to common utilities files":/utils
+MONGODB_CONTAINER_NAME="container name for mongo":cisdb
+MOUNT_DIR_DB="mount path to dtabase dump":/data/db
+PHINEAS_FERB_CONTAINER="mount path to method invocator":/method-invocation
+DEXTER_CONTAINER="mount path to math model genrator":/math-model-generator
+CODE_MANAGER_CONTAINER="mount path to code manager files":/code_manager
+WORD2VEC_data_CONTAINER="mount path to word vec bin / model":/context_switch/data
+WORD2VEC_CONTAINER="mount path to context switch files":/context_switch
+SAMPLE_DIR_CONTAINER="mount path to samples":/sample
+ROOT_PATH_CONTAINER="mount path to 0x4bdn":/0x4bdn
+
+ROOT_PATH="path to 0x4bdn"
+SPHINX_PATH="path to sphinx doc project"
+REPO_PATH="path to rest server files"
+DB_DRIVER="path to database driver files"
+COMMON_UTIL="path to common utils files"
+DIR_DB="path to database dump"
+PHINEAS_FERB="path to method invocator files"
+DEXTER="path to math model generator files"
+CODE_MANAGER="path to caode manager files"
+WORD2VEC_data="path to vector data (word to vec)"
+WORD2VEC="path to context switch files"
+SAMPLE_DIR="path to sample files"
+

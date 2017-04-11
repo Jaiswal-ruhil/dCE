@@ -18,5 +18,7 @@ documentation/docs2/_build/*
 filelist.txt
 dirlist.txt
 .cis/
+.dev_env/config
+Dockerfile
 Makefile
 make.bat
