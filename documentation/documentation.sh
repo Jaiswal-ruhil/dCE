@@ -25,6 +25,7 @@ sphinx-quickstart $dir \
 --ext-autodoc "y" \
 --ext-todo "y" \
 --ext-coverage "y" \
+--ext-viewcode "y" \
 --makefile "y"
 
 _content = '
