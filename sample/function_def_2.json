@@ -16,8 +16,6 @@
         }
     ],
     "return": "int",
-    "body": [
-        "return x"
-    ],
+    "body": "def a(x: int, y: str) -> int:\n    return x",
     "author": "Ruhil Jaiswal"
 }

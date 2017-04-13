@@ -7,7 +7,9 @@ rm -r $dir
 mkdir $dir
 
 echo "Generating program list"
-find $projectdir -name "[a-z]*.py" | awk -F "/" '{print $NF}' >filelist.txt
+find $projectdir -name "[a-z]*.py" >all_py_files
+grep -v "\.cis" all_py_files >filtered_py_files
+awk -F "/" '{print $NF}' filtered_py_files  >filelist.txt
 
 echo " generating the docs "
 find $projectdir -name "[a-z]*.py" | awk -F "/" '{OFS = "/"}{$(NF--)=""; }{print}' >dirlist.txt
@@ -35,13 +37,12 @@ from sys import path
 path.insert(0, abspath('.'))
 
 base_path = split(split(abspath(os.getcwd()))[0])[0]
-with open(join(base_path, "documentation", "dirlist.txt"), "r") as fp:
-dir_list=fp.read().splitlines()
+fp = open(join(base_path, "documentation", "dirlist.txt"), "r")
+dir_set=set(fp.read().splitlines())
+fp.close()
 
-dir_set=set(dir_list)
-print(dir_set)
 for dir_path in dir_set:
-path.append(dir_path)
+    path.append(dir_path)
 '
 echo "${_content}" >> ./docs2/conf.py
 
@@ -49,3 +50,6 @@ echo "Generating code.rst"
 python3 documentation.py
 make -C $dir clean
 make -C $dir html
+
+# remove all temp files
+rm all_py_files filtered_py_files
