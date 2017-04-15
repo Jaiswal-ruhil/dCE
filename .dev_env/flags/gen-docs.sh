@@ -4,5 +4,7 @@ dev-script run_container --name sphinx -it \
     -v $CODE_MANAGER:$CODE_MANAGER_CONTAINER \
     -v $REPO_PATH:$REPO_PATH_CONTAINER \
     -v $SPHINX_PATH:$SPHINX_PATH_CONTAINER \
+    -v $CIS_PATH:$CIS_PATH_CONTAINER \
+    -v $DB_DRIVER:$DB_DRIVER_CONTAINER \
     --img=$IMG $SPHINX_PATH_CONTAINER/documentation.sh 
 
