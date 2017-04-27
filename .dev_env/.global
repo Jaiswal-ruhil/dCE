@@ -21,6 +21,7 @@ WORD2VEC_data_CONTAINER="mount path to word vec bin / model":/context_switch/dat
 WORD2VEC_CONTAINER="mount path to context switch files":/context_switch
 SAMPLE_DIR_CONTAINER="mount path to samples":/sample
 ROOT_PATH_CONTAINER="mount path to 0x4bdn":/0x4bdn
+CIS_PATH_CONTAINER="mount path to cis":/code_integration_system
 
 ROOT_PATH="path to 0x4bdn"
 SPHINX_PATH="path to sphinx doc project"
@@ -34,4 +35,4 @@ CODE_MANAGER="path to caode manager files"
 WORD2VEC_data="path to vector data (word to vec)"
 WORD2VEC="path to context switch files"
 SAMPLE_DIR="path to sample files"
-
+CIS_PATH="mount path to cis"

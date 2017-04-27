@@ -3,8 +3,11 @@
 dir=`pwd`/docs2/
 projectdir=/0x4bdn
 
-rm -r $dir
-mkdir $dir
+if [[ -d $dir ]]; then
+    rm -r $dir/*
+else
+    mkdir $dir
+fi
 
 echo "Generating program list"
 find $projectdir -name "[a-z]*.py" >all_py_files
