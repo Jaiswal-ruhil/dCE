@@ -1,5 +1,5 @@
 # deploy ReST server
-cd $curdir/rest-server
+cd `pwd`/rest-server
 dev-env --webpack
 
 docker stop webpack-server
