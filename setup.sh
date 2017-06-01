@@ -3,10 +3,10 @@
 docker --version
 exit_status=$?
 if [[ $exit_status -ne 0 ]]; then
-  echo "* docker not available"
-  echo "* make sure docker can be accessed without sudo"
+    echo "* docker not available"
+    echo "* make sure docker can be accessed without sudo"
 else
-  echo "Docker installed properly"
+    echo "Docker installed properly"
 fi
 
 
@@ -14,9 +14,8 @@ fi
 dev-env --version
 exit_status=$?
 if [[ $exit_status -ne 0 ]]; then
-  echo "* dev-env not available"
-  echo "* make sure dev-env can be accessed"
+    echo "* dev-env not available"
+    echo "* make sure dev-env can be accessed"
 else
-  echo "dev-env installed properly"
+    echo "dev-env installed properly"
 fi
-

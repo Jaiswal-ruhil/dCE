@@ -8,7 +8,8 @@
     "tags": ["testing", "test1"],
     "params": [{
             "type": "int",
-            "var": "x"
+            "var": "x",
+            "constraint": "issorted"
         }],
     "return": "int",
     "body": [

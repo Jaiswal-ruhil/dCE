@@ -1,0 +1,17 @@
+  +------+
+  |{io}  |        +--------------+
+  | Task +------->| Task Model   |                   
+  |      |        |   Generator  +---------------+
+  +------+        +--------------+               |
+                                                 |
+                                                 v           +-------+
+ +-----------+                            +------------+     |{s}    |
+ |{io}       |      +-------=+ weighted   |            +-----|Storage|
+ |    Task   +----->| filter +----------->| correation |     |       |
+ |Description|      +--------+   map      |Map    |     +-------+
+ |           |                            |            |
+ +-----------+                            +------------+
+                        
+                   
+          Fig  Cross Maping b/w Representations (Model and Textual)
+
