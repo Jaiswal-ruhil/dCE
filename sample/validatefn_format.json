@@ -1,4 +1,5 @@
 {
     "code": "source code",
+    "filters": [1, 2],
     "tags": ["math", "name"]
 }

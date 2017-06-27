@@ -5,7 +5,11 @@
             "type": "array",
             "items": {"type": "string"}
         },
-        "code": {"type": "string"}
+        "code": {"type": "string"},
+        "filters": {
+            "type": "array",
+            "items": {"type": "number"}
+        }
     },
     "required": ["code", "tags"]
 }
